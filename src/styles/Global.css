@@ -1,0 +1,49 @@
+/* src/styles/Global.css */
+
+/* Reset básico para garantir consistência entre navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilos para botões */
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #61dafb;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #4ab0e6;
+}
+
+/* Estilos para imagens */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

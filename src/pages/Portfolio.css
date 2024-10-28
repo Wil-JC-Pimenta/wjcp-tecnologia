@@ -18,4 +18,59 @@
   padding: 1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  overflow: hidden;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.copy-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.copy-button:hover {
+  background-color: #45a049;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.repo-link {
+  background-color: #007bff;
+  color: white;
+  margin-right: 0.5rem;
+}
+
+.repo-link:hover {
+  background-color: hsl(256, 94%, 44%);
+}
+
+.deploy-link {
+  background-color: hsl(256, 94%, 44%);
+  color: white;
+}
+
+.deploy-link:hover {
+  background-color: hsl(256, 94%, 44%);
 }

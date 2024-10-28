@@ -38,9 +38,9 @@ const Header = () => {
           </ul>
         </div>
         <div className="menu-toggle" onClick={toggleMenu}>
-          <span className="bar"></span>
-          <span className="bar"></span>
-          <span className="bar"></span>
+          <div className={`bar ${isMenuOpen ? "active" : ""}`}></div>
+          <div className={`bar ${isMenuOpen ? "active" : ""}`}></div>
+          <div className={`bar ${isMenuOpen ? "active" : ""}`}></div>
         </div>
       </nav>
     </header>

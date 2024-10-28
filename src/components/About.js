@@ -9,40 +9,26 @@ const About = () => {
       <p>
         {" "}
         Olá! Eu sou <strong>Wilker Pimenta</strong>, um desenvolvedor apaixonado
-        por tecnologia e inovação. Com formação em{" "}
-        <em>análise e desenvolvimento de sistemas</em>, trago uma base sólida em
-        programação e desenvolvimento de software, complementada por uma
-        experiência prática em projetos desafiadores. Minha missão é construir
-        software de alta qualidade que atenda às necessidades dos clientes e que
-        se destaque pela eficiência e usabilidade.{" "}
+        por tecnologia e inovação.<br></br> Estou cursando{" "}
+        <em>Análise e Desenvolvimento de Sistemas</em> na{" "}
+        <strong>Universidade Católica de Brasília</strong>, trago uma base
+        sólida em programação e desenvolvimento de software, complementada por
+        uma experiência prática em projetos pessoais. <br></br>
+        Minha missão é construir sistemas de alta qualidade que atenda às
+        necessidades dos clientes e que se destaque pela eficiência e
+        usabilidade.{" "}
       </p>{" "}
       <p>
         {" "}
         Minha jornada na tecnologia me levou a me especializar em diversas
-        linguagens e ferramentas. Tenho um forte domínio em <strong>PHP</strong>
-        , <strong>JavaScript</strong>, <strong>HTML</strong>,{" "}
-        <strong>CSS</strong>, e bancos de dados como <strong>MySQL</strong> e{" "}
-        <strong>PostgreSQL</strong>. Atualmente, estou explorando frameworks
-        modernos como <strong>Spring Boot</strong> e <strong>React</strong>, o
-        que me permite desenvolver aplicações robustas e responsivas que
-        proporcionam uma experiência excepcional aos usuários.{" "}
-      </p>{" "}
-      <p>
-        {" "}
-        Além disso, sou adepto de práticas ágeis e metodologias de
-        desenvolvimento, incluindo <strong>TDD</strong> e <strong>DDD</strong>,
-        que garantem um fluxo de trabalho organizado e a entrega de produtos de
-        alta qualidade. Tenho experiência em trabalhar com controle de versão
-        utilizando <strong>GIT</strong>, o que me ajuda a colaborar efetivamente
-        em equipes e a gerenciar projetos de forma eficiente.{" "}
-      </p>{" "}
-      <p>
-        {" "}
-        Minha formação em <em>mecatrônica</em> e experiência anterior como
-        mecânico de manutenção me proporcionaram uma visão analítica e uma
-        abordagem prática para a resolução de problemas. Isso se traduz na minha
-        capacidade de desenvolver soluções criativas e inovadoras que atendem às
-        demandas do mercado.{" "}
+        linguagens e ferramentas. Tenho desenvolvido projetos utilizando{" "}
+        <strong>Java</strong>, <strong>JavaScript</strong>,{" "}
+        <strong>HTML</strong>, <strong>CSS</strong>, e bancos de dados como{" "}
+        <strong>MySQL</strong> e <strong>PostgreSQL</strong>.<br></br>
+        Atualmente, estou explorando frameworks modernos como{" "}
+        <strong>Spring Boot</strong> e <strong>React</strong>, o que me permite
+        desenvolver aplicações robustas e responsivas que proporcionam uma
+        experiência excepcional aos usuários.{" "}
       </p>{" "}
       <p>
         {" "}

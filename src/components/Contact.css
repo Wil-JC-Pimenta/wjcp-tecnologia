@@ -1,0 +1,58 @@
+/* src/components/Contact.css */
+.contact-container {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+.contact-flex {
+  display: flex;
+  align-items: flex-start; /* Alinha a imagem e o formulário ao topo */
+  gap: 2rem; /* Espaço entre a imagem e o formulário */
+}
+
+.logo {
+  max-width: 150px; /* Define um tamanho máximo para a imagem do logo */
+  width: 100%; /* Responsivo */
+}
+
+.contact-form {
+  flex: 1; /* O formulário ocupará o restante do espaço disponível */
+  min-width: 300px; /* Define uma largura mínima para o formulário */
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-button {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #61dafb;
+  color: white;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #21a1f1;
+}

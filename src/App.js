@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./components/About";
 import Portfolio from "./pages/Portfolio";
+import Contact from "./components/Contact";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Home />
       <About />
       <Portfolio />
+      <Contact />
       <Footer />
     </div>
   );

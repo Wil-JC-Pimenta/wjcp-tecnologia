@@ -10,9 +10,9 @@
   background: linear-gradient(
     to right,
     #171717,
-    #ff0000
+    #1e00ff
   ); /* Gradiente como fundo */
-  color: white;
+  color: rgba(113, 138, 207, 0.819);
   text-align: center;
   padding: 20px;
   font-family: "Arial", sans-serif;

@@ -1,33 +1,34 @@
 /* src/pages/Home.css */
-/* src/pages/Home.css */
-
 .home-section {
-  height: 100vh;
+  height: 100vh; /* A altura ocupará 100% da altura da viewport */
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
   flex-direction: column;
-  background: linear-gradient(
-    to right,
-    #171717,
-    #1e00ff
-  ); /* Gradiente como fundo */
-  color: rgba(113, 138, 207, 0.819);
+  background-image: url("../assets/images/background-img.jpg");
+  background-size: cover; /* Faz com que a imagem de fundo cubra toda a área */
+  background-position: center; /* Centraliza a imagem de fundo */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
   text-align: center;
-  padding: 20px;
+  padding: 20px; /* Adiciona espaçamento interno */
   font-family: "Arial", sans-serif;
+  color: #ffffff; /* Cor do texto */
 }
 
+/* Estilos para a sombra do texto */
 .intro h1 {
   font-size: 3rem;
   margin-bottom: 10px;
   animation: fadeIn 1s ease-in-out; /* Animação de fade in */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra forte */
 }
 
 .intro p {
   font-size: 1.5rem;
   margin-bottom: 20px;
+  font-weight: 300;
   animation: fadeIn 1.5s ease-in-out;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra forte */
 }
 
 .typing-effect {
@@ -38,6 +39,7 @@
   border-right: 0.15em solid #fff; /* Efeito de cursor */
   width: 100%; /* Para ocupar toda a largura */
   animation: blink 0.75s step-end infinite; /* Animação de cursor piscante */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra forte */
 }
 
 /* Animações */

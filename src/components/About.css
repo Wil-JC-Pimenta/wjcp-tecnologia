@@ -1,17 +1,44 @@
 /* src/components/About.css */
 .about-section {
-  padding: 2rem;
+  padding: 2rem 1.5rem; /* Adicionei um pouco de espaço extra nas laterais */
   text-align: center;
-  background-color: #f5f5f5;
+  background-color: #ffffff; /* Um fundo mais claro para um visual mais clean */
   color: #333;
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidade */
+  max-width: 800px; /* Limita a largura da seção */
+  margin: 2rem auto; /* Centraliza a seção e adiciona margem superior e inferior */
 }
 
 h2 {
   margin-bottom: 1rem;
-  color: #282c34;
+  color: #2c3e50; /* Um tom mais escuro para o cabeçalho */
+  font-size: 2rem; /* Aumenta o tamanho da fonte para destaque */
+  font-weight: 600; /* Deixa o texto mais forte */
 }
 
 p {
   font-size: 1.1rem;
-  line-height: 1.6;
+  line-height: 1.8; /* Aumenta o espaçamento entre linhas para melhor legibilidade */
+  margin: 1rem 0; /* Adiciona espaço superior e inferior aos parágrafos */
+}
+
+strong {
+  color: #2980b9; /* Destaca palavras em negrito com uma cor agradável */
+}
+
+em {
+  font-style: italic; /* Itálico para ênfase */
+  color: #34495e; /* Cor mais suave para textos em itálico */
+}
+
+/* Adicionando responsividade */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem; /* Reduz o tamanho da fonte do cabeçalho em telas menores */
+  }
+
+  p {
+    font-size: 1rem; /* Reduz o tamanho da fonte dos parágrafos em telas menores */
+  }
 }

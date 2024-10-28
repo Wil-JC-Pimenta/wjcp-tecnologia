@@ -1,12 +1,44 @@
 /* src/components/Footer.css */
+
 .footer {
-  background-color: #282c34;
-  color: white;
-  text-align: center;
-  padding: 1.5rem 0;
-  margin-top: 2rem;
+  background-color: #282c34; /* cor de fundo */
+  color: #ffffff; /* cor do texto */
+  text-align: center; /* centraliza o texto */
+  padding: 20px 0; /* espaçamento */
+  position: relative; /* para posição do rodapé */
+  bottom: 0; /* para ficar na parte inferior */
+  width: 100%; /* ocupa toda a largura */
 }
 
-.contact-info {
-  margin-top: 0.5rem;
+.footer-content {
+  max-width: 800px; /* largura máxima do conteúdo */
+  margin: 0 auto; /* centraliza horizontalmente */
+}
+
+.contact-info p {
+  margin: 5px 0; /* espaçamento entre os parágrafos */
+}
+
+.contact-info a {
+  color: #61dafb; /* cor dos links */
+  text-decoration: none; /* remove o sublinhado dos links */
+}
+
+.contact-info a:hover {
+  text-decoration: underline; /* sublinha no hover */
+}
+
+.social-icons {
+  margin-top: 10px; /* espaçamento acima dos ícones */
+}
+
+.social-icons a {
+  margin: 0 10px; /* espaçamento entre os ícones */
+  color: #61dafb; /* cor dos ícones */
+  font-size: 24px; /* tamanho dos ícones */
+  transition: color 0.3s; /* animação ao mudar a cor */
+}
+
+.social-icons a:hover {
+  color: #ffffff; /* cor dos ícones ao passar o mouse */
 }

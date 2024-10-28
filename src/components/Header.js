@@ -1,26 +1,47 @@
 // src/components/Header.js
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header className="header">
-      <div className="logo">WJCP Tecnologia</div>
+      <div className="logo">WJCP</div>
       <nav>
-        <ul>
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#about">Sobre</a>
-          </li>
-          <li>
-            <a href="#portfolio">Portfólio</a>
-          </li>
-          <li>
-            <a href="#contact">Contato</a>
-          </li>
-        </ul>
+        <div className={`nav-links ${isMenuOpen ? "active" : ""}`}>
+          <ul>
+            <li>
+              <a href="#home" onClick={toggleMenu}>
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#about" onClick={toggleMenu}>
+                Sobre
+              </a>
+            </li>
+            <li>
+              <a href="#portfolio" onClick={toggleMenu}>
+                Portfólio
+              </a>
+            </li>
+            <li>
+              <a href="#contact" onClick={toggleMenu}>
+                Contato
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div className="menu-toggle" onClick={toggleMenu}>
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </div>
       </nav>
     </header>
   );

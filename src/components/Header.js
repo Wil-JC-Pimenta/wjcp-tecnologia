@@ -1,15 +1,37 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Header.css";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolling, setScrolling] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+      setScrolling(true);
+    } else {
+      setScrolling(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const handleScrollToContact = () => {
+    const section = document.getElementById("contact");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+      setIsMenuOpen(false); // Fecha o menu após clicar
+    }
+  };
+
   return (
-    <header className="header">
+    <header className={`header ${scrolling ? "scrolling" : ""}`}>
       <div className="logo">WJCP</div>
       <nav>
         <div className={`nav-links ${isMenuOpen ? "active" : ""}`}>
@@ -30,7 +52,7 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a href="#contact" onClick={toggleMenu}>
+              <a href="#contact" onClick={handleScrollToContact}>
                 Contato
               </a>
             </li>

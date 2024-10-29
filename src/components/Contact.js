@@ -1,4 +1,3 @@
-// src/components/Contact.js
 import React, { useState } from "react";
 import "./Contact.css";
 import logo from "../assets/images/logo.svg";
@@ -15,11 +14,32 @@ const Contact = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Aqui você pode adicionar lógica para enviar os dados do formulário
-    console.log("Formulário enviado:", formData);
-    setFormData({ name: "", email: "", message: "" }); // Limpa o formulário
+
+    try {
+      const response = await fetch(
+        "http://localhost:5678/webhook-test/5c6db754-2fb8-422e-8478-0501ab448553",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      // Verifica se a resposta foi bem-sucedida
+      if (response.ok) {
+        const responseData = await response.json(); // Aqui está a leitura da resposta
+        console.log("Dados enviados com sucesso para o n8n!", responseData);
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        console.error("Erro ao enviar dados para o n8n.");
+      }
+    } catch (error) {
+      console.error("Erro de conexão:", error);
+    }
   };
 
   return (

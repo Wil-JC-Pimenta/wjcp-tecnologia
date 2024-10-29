@@ -1,4 +1,3 @@
-/* src/components/Header.css */
 .header {
   display: flex;
   justify-content: space-between;
@@ -7,6 +6,11 @@
   background-color: #282c34;
   color: white;
   position: relative;
+  transition: background-color 0.3s;
+}
+
+.header.scrolling {
+  background-color: rgba(40, 44, 52, 0.9); /* Muda a cor ao rolar */
 }
 
 .logo {
@@ -74,6 +78,7 @@ nav a:hover {
     background-color: #282c34;
     padding: 1rem 0;
     z-index: 10;
+    transition: max-height 0.3s ease-in-out; /* Transição suave */
   }
 
   .nav-links.active {

@@ -1,4 +1,6 @@
 .contact-container {
+  display: block;
+  border: solid, 1px, rebeccapurple;
   padding: 2rem;
   background-color: #f9f9f9;
   border-radius: 8px;
@@ -28,7 +30,7 @@ h2 {
 .contact-form {
   flex: 1; /* O formulário ocupará o restante do espaço disponível */
   min-width: 300px; /* Define uma largura mínima para o formulário */
-  width: 100%; /* Responsivo */
+  width: 40%; /* Responsivo */
 }
 
 .form-group {

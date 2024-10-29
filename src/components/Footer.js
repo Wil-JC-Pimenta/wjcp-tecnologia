@@ -1,6 +1,6 @@
 // src/components/Footer.js
 import React from "react";
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaTiktok, FaLinkedin, FaInstagram } from "react-icons/fa";
 import "./Footer.css";
 
 const Footer = () => {
@@ -11,49 +11,28 @@ const Footer = () => {
         <div className="contact-info">
           <p>
             Email:{" "}
-            <a href="mailto:contato@wjcptecnologia.com">
-              wiljcpimenta@gmail.com
-            </a>
-          </p>
-          <p>
-            LinkedIn:{" "}
             <a
-              href="https://www.linkedin.com/in/wil-jc-pimenta"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:wiljcpimenta@gmail.com
+            "
             >
-              Wilker Pimenta
+              wiljcpimenta@gmail.com
             </a>
           </p>
         </div>
         <div className="social-icons">
           <a
-            href="https://www.facebook.com"
+            href="https://www.tiktok.com/@wilkerdev"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaFacebook className="icon" />
+            <FaTiktok className="icon" />
           </a>
           <a
-            href="https://www.twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaTwitter className="icon" />
-          </a>
-          <a
-            href="https://www.linkedin.com"
+            href="https://www.linkedin.com/in/wil-jc-pimenta"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaLinkedin className="icon" />
-          </a>
-          <a
-            href="https://www.instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaInstagram className="icon" />
           </a>
         </div>
       </div>

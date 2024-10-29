@@ -2,6 +2,8 @@
 import React from "react";
 import "./Portfolio.css";
 import eletricaImage from "../assets/images/eletrica.png";
+import equipmanageImage from "../assets/images/equipmanage.png";
+import ordemdeservicoImage from "../assets/images/ordem-de-servico.png";
 
 const Portfolio = () => {
   const projects = [
@@ -14,12 +16,12 @@ const Portfolio = () => {
       deployUrl: "https://filipe-eletricista-6d1z.vercel.app/",
     },
     {
-      title: "Sistema de Geração de Certificados de Calibração",
+      title: "EquipManage - Sistema de Gestão de Certificados de Calibração",
       description:
-        "Criei um sistema para gestão de certificados de calibração de instrumentos e válvulas, com registro de usuários, corpo técnico, clientes, equipamento e certificados de calibração. O sistema está sendo desenvolvido em Node js, Express, PostgreSQL e tem o objetivo de facilitar e padronizar a criação de certificados.",
-      imageUrl: "url-da-imagem-para-certificados.jpg",
-      repoUrl: "link-do-repositorio-para-certificados",
-      deployUrl: "url-do-deploy-para-certificados",
+        "Criei um sistema para gestão de certificados de calibração de equipamentos, instrumentos e válvulas, com registro de usuários, corpo técnico, clientes, equipamento e certificados de calibração. O sistema está sendo desenvolvido em Node.js, Express, PostgreSQL e tem o objetivo de facilitar o registro de informações importantes e padronizar a criação de certificados.",
+      imageUrl: equipmanageImage,
+      videoUrl: "/assets/videos/equipmanage.mkv",
+      repoUrl: "https://github.com/Wil-JC-Pimenta/EquipManage",
     },
     {
       title: "Nheengatu (NEGATU)",
@@ -27,34 +29,37 @@ const Portfolio = () => {
         "Nheengatu é um token digital na blockchain Solana, inspirado na língua indígena Nheengatu, com o objetivo de promover inclusão financeira e ser um meio de troca acessível. Ele conecta comunidades, incentiva transações locais e apoia projetos sustentáveis. Foi desenvolvido utilizando tecnologias como CLI Solana, Anchor, Node.js, Express, React.js e Rust. O token foi criado inicialmente na rede de teste da Solana e depois implantado na rede principal, podendo ser consultado no Solana Explorer.",
       imageUrl: "https://ngt-pi.vercel.app/my-image.png",
       repoUrl: "https://ngtdapp-front-end.vercel.app/",
-      deployUrl:
+      deployUrl: "https://ngtdapp-front-end.vercel.app/",
+      solanaExplorer:
         "https://explorer.solana.com/address/mnthw9H7rjWiiamrcyVwErvfTPLKBN6WPQXL2DqrJQE?cluster=mainnet",
       additionalInfo: "Supply Total: 50 milhões (50,000,000 NEGATU)",
       mintAddress: "mnthw9H7rjWiiamrcyVwErvfTPLKBN6WPQXL2DqrJQE",
     },
     {
-      title: "Sistema de Controle de Usuários",
+      title: "Sistema de Controle de Ordens de Serviço",
       description:
-        "Desenvolvi um sistema completo para gerenciamento de usuários com autenticação e autorização, utilizando PHP e MySQL. O projeto permite operações CRUD e controle de acesso.",
-      imageUrl: "url-da-imagem-para-controle-usuarios.jpg",
-      repoUrl: "link-do-repositorio-para-controle-usuarios",
-      deployUrl: "url-do-deploy-para-controle-usuarios",
-    },
-    {
-      title: "Conversor de Moedas",
-      description:
-        "Projeto de conversão de moedas em tempo real, utilizando APIs externas para obter taxas de câmbio e calcular valores. Implementado com Java e biblioteca Gson para manipulação de JSON.",
-      imageUrl: "url-da-imagem-para-conversor-moedas.jpg",
-      repoUrl: "link-do-repositorio-para-conversor-moedas",
-      deployUrl: "url-do-deploy-para-conversor-moedas",
+        "Desenvolvi um sistema para controle de Ordens de Serviço que permite inserir, atualizar e deletar dados dos clientes, número da OS e valores de mão de obra e materiais. Utilizei as tecnologias PHP para o Back End, MySQL para o Banco de Dados, HTML e CSS para o Front-End. , utilizando PHP e MySQL. O projeto permite operações CRUD e está em fase de desenvolvimento de controle de acesso.",
+      imageUrl: ordemdeservicoImage,
+      videoUrl: "/assets/videos/ordem-de-servico.mkv",
+      repoUrl: "https://github.com/Wil-JC-Pimenta/ordem-de-servico",
+      deployUrl: "https://github.com/Wil-JC-Pimenta/ordem-de-servico",
     },
   ];
 
-  const copyToClipboard = (text) => {
-    navigator.clipboard.writeText(text).then(
-      () => alert("mnthw9H7rjWiiamrcyVwErvfTPLKBN6WPQXL2DqrJQE"),
-      (err) => console.error("Falha ao copiar: ", err)
-    );
+  const handleCopyMintAddress = (address) => {
+    navigator.clipboard.writeText(address);
+    alert("Endereço do Mint copiado para a área de transferência!");
+  };
+
+  const handleDeployClick = (projectTitle) => {
+    if (
+      projectTitle ===
+      "EquipManage - Sistema de Gestão de Certificados de Calibração"
+    ) {
+      alert("Projeto em desenvolvimento");
+    } else if (projectTitle === "Sistema de Controle de Ordens de Serviço") {
+      alert("Projeto em desenvolvimento");
+    }
   };
 
   return (
@@ -70,31 +75,63 @@ const Portfolio = () => {
             />
             <h3>{project.title}</h3>
             <p>{project.description}</p>
-            {project.additionalInfo && <p>{project.additionalInfo}</p>}
-            {project.mintAddress && (
-              <button
-                onClick={() => copyToClipboard(project.mintAddress)}
-                className="copy-button"
+
+            {project.videoUrl && (
+              <video
+                src={project.videoUrl}
+                controls
+                className="project-video"
+                width="100%"
               >
-                Copy Token Mint
-              </button>
+                Seu navegador não suporta o elemento de vídeo.
+              </video>
             )}
-            <a
-              href={project.repoUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="project-link repo-link"
-            >
-              Repositório
-            </a>
-            <a
-              href={project.deployUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="project-link deploy-link"
-            >
-              Deploy
-            </a>
+
+            {project.title === "Nheengatu (NEGATU)" && (
+              <>
+                <button
+                  className="project-link mint-link"
+                  onClick={() => handleCopyMintAddress(project.mintAddress)}
+                >
+                  Copy Token Mint
+                </button>
+                <a
+                  href={project.deployUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-link deploy-link"
+                >
+                  NGT-Dapp
+                </a>
+                <a
+                  href={project.solanaExplorer}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-link explorer-link"
+                >
+                  Solana Explorer
+                </a>
+              </>
+            )}
+
+            {project.title !== "Nheengatu (NEGATU)" && (
+              <>
+                <a
+                  href={project.repoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-link repo-link"
+                >
+                  Repositório
+                </a>
+                <button
+                  className="project-link deploy-link"
+                  onClick={() => handleDeployClick(project.title)}
+                >
+                  Deploy
+                </button>
+              </>
+            )}
           </div>
         ))}
       </div>

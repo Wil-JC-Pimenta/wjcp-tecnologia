@@ -36,7 +36,7 @@ const Contact = () => {
 
       // Verifica se a resposta foi bem-sucedida
       if (response.ok) {
-        const responseData = await response.json(); // Aqui está a leitura da resposta
+        const responseData = await response.json();
         console.log("Dados enviados com sucesso para o n8n!", responseData);
         setFormData({ name: "", email: "", message: "" });
       } else {

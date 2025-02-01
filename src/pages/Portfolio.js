@@ -4,6 +4,10 @@ import "./Portfolio.css";
 import eletricaImage from "../assets/images/eletrica.png";
 import equipmanageImage from "../assets/images/equipmanage.png";
 import ordemdeservicoImage from "../assets/images/ordem-de-servico.png";
+import wiviplayImage from "../assets/images/wiviplay.png";
+import socafeImage from "../assets/images/socafe.png";
+import saboresbrasilImage from "../assets/images/saboresbrasil.png";
+import elitetrainingImage from "../assets/images/elitetraining.png";
 
 const Portfolio = () => {
   const projects = [
@@ -28,7 +32,7 @@ const Portfolio = () => {
       description:
         "NheengatuX é um token SPL desenvolvido na blockchain Solana, inspirado na língua indígena Nheengatu, com o objetivo de promover inclusão financeira no mundo das criptomoedas e desenvolvimento de tecnologias para blockchain, como dApp (Aplicativos descentralizados). O projeto utiliza tecnologias como CLI Solana, Anchor Framework, Node.js, Express, React.js e Rust para criação de contratos inteligentes. O token foi criado inicialmente na rede Testnet (Rede de Teste) e depois implantado na Mainnet Beta , podendo ser consultado no Solana Explorer.",
       imageUrl: "https://ngt-pi.vercel.app/my-image.png",
-      repoUrl: "https://nheengatux.vercel.app/",
+      repoUrl: "https://github.com/Wil-JC-Pimenta/NheengatuX-Crypto",
       deployUrl: "https://nheengatux.vercel.app/",
       solanaExplorer:
         "https://explorer.solana.com/address/mnthw9H7rjWiiamrcyVwErvfTPLKBN6WPQXL2DqrJQE?cluster=mainnet",
@@ -42,7 +46,37 @@ const Portfolio = () => {
       imageUrl: ordemdeservicoImage,
       videoUrl: "/assets/videos/ordem-de-servico.mkv",
       repoUrl: "https://github.com/Wil-JC-Pimenta/ordem-de-servico",
-      deployUrl: "https://github.com/Wil-JC-Pimenta/ordem-de-servico",
+    },
+    {
+      title: "Wiviplay - Online Rádio",
+      description:
+        "Site sobre música, com opção de buscas de estações de rádios online, página de produtos afiliados amazon, integração com Stripe, Google AdSense e Firebase Analytics.",
+      imageUrl: wiviplayImage,
+      deployUrl: "https://wiviplay.com",
+    },
+    {
+      title: "SóCafé - Landing Page Comercial para Cafeteria",
+      description:
+        "Landing page criada para a cafeteria SóCafé, destacando o cardápio, promoções e os diferenciais da marca. Utilizei Lovable, React, Vite e TypeScript para garantir uma experiência fluída e responsiva.",
+      imageUrl: socafeImage,
+      repoUrl: "https://github.com/Wil-JC-Pimenta/socafe-experience",
+      deployUrl: "https://socafe-experience.vercel.app/",
+    },
+    {
+      title: "Sabores Brasil",
+      description:
+        "Site institucional para a Sabores Brasil, com informações sobre o menu e a história da cafeteria. Desenvolvido utilizando HTML, CSS e JavaScript.",
+      imageUrl: saboresbrasilImage,
+      repoUrl: "https://github.com/Wil-JC-Pimenta/saboresdobrasil",
+      deployUrl: "http://www.saboresbrasil.com",
+    },
+    {
+      title: "Elite Training - Site Comercial Personal Trainer",
+      description:
+        "Site comercial para um personal trainer, com informações sobre serviços, agendamento de aulas e depoimentos de clientes. Utilizei React, HTML, CSS e JavaScript.",
+      imageUrl: elitetrainingImage,
+      repoUrl: "https://github.com/Wil-JC-Pimenta/elite-training",
+      deployUrl: "https://elite-training-murex.vercel.app/",
     },
   ];
 
@@ -87,7 +121,7 @@ const Portfolio = () => {
               </video>
             )}
 
-            {project.title === "Nheengatu (NEGATU)" && (
+            {project.title === "NheengatuX (NGTX)" && (
               <>
                 <button
                   className="project-link mint-link"
@@ -114,7 +148,7 @@ const Portfolio = () => {
               </>
             )}
 
-            {project.title !== "Nheengatu (NEGATU)" && (
+            {project.title !== "NheengatuX (NGTX)" && (
               <>
                 <a
                   href={project.repoUrl}

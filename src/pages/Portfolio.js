@@ -24,15 +24,15 @@ const Portfolio = () => {
       repoUrl: "https://github.com/Wil-JC-Pimenta/EquipManage",
     },
     {
-      title: "Nheengatu (NEGATU)",
+      title: "NheengatuX (NGTX)",
       description:
-        "Nheengatu é um token digital na blockchain Solana, inspirado na língua indígena Nheengatu, com o objetivo de promover inclusão financeira no mundo das criptomoedas e desenvolvimento de tecnologias para blockchain, como dApp (Aplicativos descentralizados). O projeto utiliza tecnologias como CLI Solana, Anchor Framework, Node.js, Express, React.js e Rust para criação de contratos inteligentes. O token foi criado inicialmente na rede Testnet (Rede de Teste) e depois implantado na Mainnet Beta , podendo ser consultado no Solana Explorer.",
+        "NheengatuX é um token SPL desenvolvido na blockchain Solana, inspirado na língua indígena Nheengatu, com o objetivo de promover inclusão financeira no mundo das criptomoedas e desenvolvimento de tecnologias para blockchain, como dApp (Aplicativos descentralizados). O projeto utiliza tecnologias como CLI Solana, Anchor Framework, Node.js, Express, React.js e Rust para criação de contratos inteligentes. O token foi criado inicialmente na rede Testnet (Rede de Teste) e depois implantado na Mainnet Beta , podendo ser consultado no Solana Explorer.",
       imageUrl: "https://ngt-pi.vercel.app/my-image.png",
-      repoUrl: "https://ngtdapp-front-end.vercel.app/",
-      deployUrl: "https://ngtdapp-front-end.vercel.app/",
+      repoUrl: "https://nheengatux.vercel.app/",
+      deployUrl: "https://nheengatux.vercel.app/",
       solanaExplorer:
         "https://explorer.solana.com/address/mnthw9H7rjWiiamrcyVwErvfTPLKBN6WPQXL2DqrJQE?cluster=mainnet",
-      additionalInfo: "Supply Total: 50 milhões (50,000,000 NEGATU)",
+      additionalInfo: "Supply Total: 50 milhões (50,000,000 NGTX)",
       mintAddress: "mnthw9H7rjWiiamrcyVwErvfTPLKBN6WPQXL2DqrJQE",
     },
     {

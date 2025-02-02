@@ -8,6 +8,8 @@ import socafeImage from "../assets/images/socafe.png";
 import saboresbrasilImage from "../assets/images/saboresbrasil.png";
 import elitetrainingImage from "../assets/images/elitetraining.png";
 import landingcursosImage from "../assets/images/landingcursos.png";
+import vazeassociadosImage from "../assets/images/vazeassociados.png";
+import goldpriceImage from "../assets/images/goldprice.png";
 
 const Portfolio = () => {
   const projects = [
@@ -25,7 +27,7 @@ const Portfolio = () => {
         "Criei um sistema para gestão de certificados de calibração...",
       imageUrl: equipmanageImage,
       repoUrl: "https://github.com/Wil-JC-Pimenta/EquipManage",
-      isInDevelopment: true, // 🚨 Indica que está em desenvolvimento
+      isInDevelopment: true,
     },
     {
       title: "Sistema de Controle de Ordens de Serviço",
@@ -33,7 +35,7 @@ const Portfolio = () => {
         "Desenvolvi um sistema para controle de Ordens de Serviço...",
       imageUrl: ordemdeservicoImage,
       repoUrl: "https://github.com/Wil-JC-Pimenta/ordem-de-servico",
-      isInDevelopment: true, // 🚨 Indica que está em desenvolvimento
+      isInDevelopment: true,
     },
     {
       title: "Wiviplay - Online Rádio",
@@ -72,6 +74,19 @@ const Portfolio = () => {
       repoUrl: "https://github.com/Wil-JC-Pimenta/landingcursos",
       deployUrl: "https://landingcursos.vercel.app/",
     },
+    {
+      title: "Vaz & Associados - Advogados",
+      description: "Site Vaz & Associados desenvolvido com Lovable",
+      imageUrl: vazeassociadosImage,
+      deployUrl: "https://legal-sections-connector.lovable.app/",
+    },
+    {
+      title: "Gold Price - API Rest Java",
+      description:
+        "Sistema de consulta do preço da grama do ouro desenvolvido em Java, HTML, CSS, JavaScript",
+      imageUrl: goldpriceImage,
+      repoUrl: "https://github.com/Wil-JC-Pimenta/gold-price",
+    },
   ];
 
   return (
@@ -88,17 +103,19 @@ const Portfolio = () => {
             <h3>{project.title}</h3>
             <p>{project.description}</p>
 
-            {/* Link para o repositório */}
-            <a
-              href={project.repoUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="project-link repo-link"
-            >
-              Repositório
-            </a>
+            {/* Renderiza o botão apenas se houver repoUrl */}
+            {project.repoUrl && (
+              <a
+                href={project.repoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link repo-link"
+              >
+                Repositório
+              </a>
+            )}
 
-            {/* Botão de Deploy */}
+            {/* Renderiza o botão de deploy apenas se houver deployUrl ou exibe mensagem de desenvolvimento */}
             {project.isInDevelopment ? (
               <button
                 className="project-link deploy-link"

@@ -2,17 +2,6 @@
 
 Este repositório contém um portfólio de projetos desenvolvidos em React. O objetivo é mostrar minhas habilidades em desenvolvimento front-end, utilizando a biblioteca React e outras tecnologias.
 
-## Índice
-
-- [Descrição do Projeto](#descrição-do-projeto)
-- [Funcionalidades](#funcionalidades)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Instalação](#instalação)
-- [Como Executar](#como-executar)
-- [Estrutura do Projeto](#estrutura-do-projeto)
-- [Contribuição](#contribuição)
-- [Licença](#licença)
-- [Contato](#contato)
 
 ## Descrição do Projeto
 

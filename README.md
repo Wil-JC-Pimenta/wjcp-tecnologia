@@ -22,11 +22,7 @@ Este projeto é um portfólio que exibe diferentes trabalhos que desenvolvi. Cad
 - [CSS](https://www.w3schools.com/css/)
 - [Bootstrap](https://getbootstrap.com/)
 
-## Instalação
-
-Para instalar e configurar este projeto em sua máquina local, siga os passos abaixo:
-
-1. **Clone o repositório:**
-   ```bash
-   git clone https://github.com/Wil-JC-Pimenta/seu-repositorio.git
-   ```
+## Implementações Futuras
+- Criação do backend.
+- Implementação de melhorias UX/UI
+  

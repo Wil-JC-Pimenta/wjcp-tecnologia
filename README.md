@@ -23,6 +23,7 @@ Este projeto é um portfólio que exibe diferentes trabalhos que desenvolvi. Cad
 - [Bootstrap](https://getbootstrap.com/)
 
 ## Implementações Futuras
-- Criação do backend.
+- Configuração do backend e deploy em Nuvem.
+- Integração com N8N
 - Implementação de melhorias UX/UI
   
